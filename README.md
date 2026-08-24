@@ -12,7 +12,7 @@
 
 ## 在线示例与使用教程
 
-直接打开 [`index.html?lang=zh-CN`](./index.html?lang=zh-CN) 即可使用单页配置示例。顶部语言入口可以切换 English / 简体中文；“使用教程”包含 UMD/ESM 接入、奖项与图片、双权重、指针融合、物理甩动、后端结果、性能适配、上线检查和故障排查。完整字段说明见 [`config.md`](./docs/zh-CN/config.md)，能力边界见 [`CAPABILITIES.md`](./docs/zh-CN/CAPABILITIES.md)。
+访问 [WheelCanvasJS 在线演示](https://notluobo.github.io/wheel-canvas-js/) 即可使用单页配置示例；本地也可以直接打开 [`index.html?lang=zh-CN`](./index.html?lang=zh-CN)。顶部语言入口可以切换 English / 简体中文；“使用教程”包含 UMD/ESM 接入、奖项与图片、双权重、指针融合、物理甩动、后端结果、性能适配、上线检查和故障排查。完整字段说明见 [`config.md`](./docs/zh-CN/config.md)，能力边界见 [`CAPABILITIES.md`](./docs/zh-CN/CAPABILITIES.md)。
 
 工作台为纯静态 HTML、CSS 和 JavaScript，不引入页面框架或额外运行时依赖。
 

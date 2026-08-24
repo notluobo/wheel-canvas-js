@@ -12,7 +12,7 @@ WheelCanvasJS is a zero-runtime-dependency JavaScript library for building confi
 
 ## Live workbench and tutorial
 
-Open [`index.html`](./index.html) to use the static configuration workbench. Use the language control in the header to switch between English and Simplified Chinese. Its tutorial covers UMD and ESM setup, prizes and images, independent weights, pointer composition, drag physics, server-controlled outcomes, performance budgets, production checks, and troubleshooting.
+Open the [WheelCanvasJS live demo](https://notluobo.github.io/wheel-canvas-js/) to use the static configuration workbench, or open [`index.html`](./index.html) locally. Use the language control in the header to switch between English and Simplified Chinese. Its tutorial covers UMD and ESM setup, prizes and images, independent weights, pointer composition, drag physics, server-controlled outcomes, performance budgets, production checks, and troubleshooting.
 
 - Full configuration reference: [`docs/config.md`](./docs/config.md)
 - Capability matrix: [`docs/CAPABILITIES.md`](./docs/CAPABILITIES.md)
