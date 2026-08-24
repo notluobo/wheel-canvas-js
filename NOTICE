@@ -1,0 +1,26 @@
+WheelCanvasJS
+Copyright 2026 WheelCanvasJS contributors
+
+This distribution incorporates a substantially modified standalone
+implementation based on the public API and behavior of the Apache-2.0
+licensed project identified below. The original work is Copyright 2021
+Li Dong Qi. Its name is used here only for legally required attribution and
+does not identify the WheelCanvasJS product, package, namespace, or API.
+
+Original project:
+https://github.com/buuing/lucky-canvas
+
+The standalone implementation adds native JavaScript packaging, graphic
+sector weights, module entry points, type declarations, accessibility support,
+and additional compatibility and regression tests. Modified files carry an
+SPDX license identifier or are covered by the LICENSE file in this directory.
+
+The optional homepage feedback demo loads UI SFX audio (CC0) and
+canvas-confetti (ISC) from version-pinned CDN URLs. These optional third-party
+assets are not bundled into the core library or redistributed in this package:
+https://github.com/romainsimon/uisfx
+https://github.com/catdad/canvas-confetti
+
+The WheelCanvasJS brand artwork is stored at
+assets/brand/wheel-canvas-js-logo.png and is distributed as part of this
+project.

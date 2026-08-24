@@ -1,0 +1,32 @@
+name: Feature request / 功能建议
+description: Propose a reusable core capability or extension point / 提议可复用能力
+title: '[Feature]: '
+labels:
+    - enhancement
+body:
+    - type: textarea
+      id: problem
+      attributes:
+          label: Use case and problem / 使用场景与问题
+          description: Describe the problem before proposing fields. / 请先描述问题，不要只描述字段。
+      validations:
+          required: true
+    - type: textarea
+      id: proposal
+      attributes:
+          label: Proposed solution / 建议方案
+          description: Explain API, configuration, defaults, and compatibility. / 说明 API、配置、默认行为和兼容性。
+      validations:
+          required: true
+    - type: textarea
+      id: alternatives
+      attributes:
+          label: Alternatives / 替代方案
+          description: Can the existing renderer, lifecycle, or feedback adapter solve it? / 能否通过现有扩展点完成？
+    - type: checkboxes
+      id: scope
+      attributes:
+          label: Scope / 范围确认
+          options:
+              - label: This belongs in the zero-dependency core or an optional extension, not one site's business logic. / 该能力适合核心或可选扩展，不是站点业务逻辑。
+                required: true

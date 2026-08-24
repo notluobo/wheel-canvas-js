@@ -1,0 +1,62 @@
+name: Bug report / 缺陷报告
+description: Report a reproducible WheelCanvasJS problem / 报告可复现问题
+title: '[Bug]: '
+labels:
+    - bug
+body:
+    - type: markdown
+      attributes:
+          value: Thank you. Search existing issues and prepare a minimal reproduction. / 感谢反馈，请先搜索已有 Issue 并准备最小复现。
+    - type: input
+      id: version
+      attributes:
+          label: WheelCanvasJS version / 版本
+          placeholder: For example / 例如 1.0.0
+      validations:
+          required: true
+    - type: dropdown
+      id: entry
+      attributes:
+          label: Entry point / 使用入口
+          options:
+              - UMD / Browser script / 浏览器脚本
+              - CommonJS
+              - ESM
+              - TypeScript
+      validations:
+          required: true
+    - type: textarea
+      id: environment
+      attributes:
+          label: Environment / 运行环境
+          description: Include browser, operating system, Node.js, and device details. / 请填写浏览器、系统、Node.js 和设备信息。
+      validations:
+          required: true
+    - type: textarea
+      id: reproduction
+      attributes:
+          label: Minimal reproduction / 最小复现
+          description: Provide runnable HTML, a repository, or a code sample. / 提供可运行的 HTML、仓库或代码片段。
+      validations:
+          required: true
+    - type: textarea
+      id: expected
+      attributes:
+          label: Expected behavior / 预期行为
+      validations:
+          required: true
+    - type: textarea
+      id: actual
+      attributes:
+          label: Actual behavior / 实际行为
+      validations:
+          required: true
+    - type: checkboxes
+      id: checks
+      attributes:
+          label: Checklist / 提交确认
+          options:
+              - label: I searched existing issues and found no duplicate. / 我已搜索现有 Issue，没有重复报告。
+                required: true
+              - label: My configuration and logs contain no secrets or personal data. / 配置和日志不包含密钥或个人信息。
+                required: true

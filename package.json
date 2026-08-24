@@ -1,0 +1,97 @@
+{
+    "name": "wheel-canvas-js",
+    "version": "1.0.0",
+    "description": "A zero-dependency JavaScript Canvas prize wheel with configurable geometry and physics",
+    "main": "dist/wheel-canvas-js.umd.js",
+    "module": "dist/wheel-canvas-js.esm.mjs",
+    "types": "dist/wheel-canvas-js.d.cts",
+    "type": "commonjs",
+    "unpkg": "dist/wheel-canvas-js.umd.js",
+    "jsdelivr": "dist/wheel-canvas-js.umd.js",
+    "exports": {
+        ".": {
+            "browser": {
+                "types": "./dist/wheel-canvas-js.d.mts",
+                "default": "./dist/wheel-canvas-js.esm.mjs"
+            },
+            "import": {
+                "types": "./dist/wheel-canvas-js.d.mts",
+                "default": "./dist/wheel-canvas-js.esm.mjs"
+            },
+            "require": {
+                "types": "./dist/wheel-canvas-js.d.cts",
+                "default": "./dist/wheel-canvas-js.umd.js"
+            },
+            "default": {
+                "types": "./dist/wheel-canvas-js.d.cts",
+                "default": "./dist/wheel-canvas-js.umd.js"
+            }
+        }
+    },
+    "files": [
+        "dist",
+        "index.html",
+        "assets",
+        "demo",
+        "README.md",
+        "README.en.md",
+        "docs",
+        "LICENSE",
+        "NOTICE",
+        "CHANGELOG.md",
+        ".github/CONTRIBUTING.md",
+        ".github/SECURITY.md",
+        ".github/CODE_OF_CONDUCT.md"
+    ],
+    "scripts": {
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "lint": "eslint . --max-warnings 0",
+        "check": "npm run format:check && npm run lint && node --check dist/wheel-canvas-js.umd.js && node --check dist/wheel-canvas-js.esm.mjs && node --check demo/i18n.js && node --check demo/app.js",
+        "test:types": "tsc --noEmit --strict --target ES2020 --module Node16 --moduleResolution Node16 --lib ES2020,DOM --skipLibCheck tests/type-test.ts tests/type-test.mts",
+        "test": "npm run check && npm run test:types && node tests/module-test.js && node tests/naming-test.js && node tests/localization-test.js && node tests/documentation-links-test.js && node tests/site-test.js && node tests/site-runtime-test.js && node tests/smoke-test.js && node tests/compatibility-test.js && node tests/edge-case-test.js && node tests/performance-test.js",
+        "pack:check": "npm pack --dry-run",
+        "prepack": "npm test"
+    },
+    "keywords": [
+        "wheel-canvas",
+        "wheel-spinner",
+        "prize-wheel",
+        "wheel",
+        "lottery",
+        "canvas",
+        "javascript",
+        "大转盘",
+        "抽奖"
+    ],
+    "author": {
+        "name": "notluobo",
+        "url": "https://github.com/notluobo"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/notluobo/wheel-canvas-js.git"
+    },
+    "homepage": "https://github.com/notluobo/wheel-canvas-js#readme",
+    "bugs": {
+        "url": "https://github.com/notluobo/wheel-canvas-js/issues"
+    },
+    "license": "Apache-2.0",
+    "engines": {
+        "node": ">=20.19.0"
+    },
+    "sideEffects": [
+        "dist/wheel-canvas-js.umd.js",
+        "dist/wheel-canvas-js.esm.mjs"
+    ],
+    "devDependencies": {
+        "@eslint/js": "10.0.1",
+        "eslint": "10.8.1",
+        "globals": "17.11.0",
+        "prettier": "3.9.6",
+        "typescript": "7.0.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

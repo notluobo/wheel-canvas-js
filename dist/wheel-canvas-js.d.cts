@@ -1,0 +1,51 @@
+declare namespace WheelCanvasJS {
+    type CssLength = import('./wheel-canvas-js.d.mts').CssLength
+    type WheelTarget = import('./wheel-canvas-js.d.mts').WheelTarget
+    type WheelState = import('./wheel-canvas-js.d.mts').WheelState
+    type SpeedFunction = import('./wheel-canvas-js.d.mts').SpeedFunction
+    type GraphicWeightSource = import('./wheel-canvas-js.d.mts').GraphicWeightSource
+    type PointerType = import('./wheel-canvas-js.d.mts').PointerType
+    type PointerPosition = import('./wheel-canvas-js.d.mts').PointerPosition
+    type PointerLayout = import('./wheel-canvas-js.d.mts').PointerLayout
+    type PointerFusionStyle = import('./wheel-canvas-js.d.mts').PointerFusionStyle
+    type PointerColorSource = import('./wheel-canvas-js.d.mts').PointerColorSource
+    type PointerShape = import('./wheel-canvas-js.d.mts').PointerShape
+    type TextOrientation = import('./wheel-canvas-js.d.mts').TextOrientation
+    type TextAlign = import('./wheel-canvas-js.d.mts').TextAlign
+    type VerticalAlign = import('./wheel-canvas-js.d.mts').VerticalAlign
+    type TextOverflow = import('./wheel-canvas-js.d.mts').TextOverflow
+    type PhysicsDirection = import('./wheel-canvas-js.d.mts').PhysicsDirection
+    type PhysicsResultMode = import('./wheel-canvas-js.d.mts').PhysicsResultMode
+    type PhysicsDragFrom = import('./wheel-canvas-js.d.mts').PhysicsDragFrom
+    type ImageConfig = import('./wheel-canvas-js.d.mts').ImageConfig
+    type FontConfig = import('./wheel-canvas-js.d.mts').FontConfig
+    type Block = import('./wheel-canvas-js.d.mts').Block
+    type Prize = import('./wheel-canvas-js.d.mts').Prize
+    type Button = import('./wheel-canvas-js.d.mts').Button
+    type PointerWobbleConfig = import('./wheel-canvas-js.d.mts').PointerWobbleConfig
+    type PointerConfig = import('./wheel-canvas-js.d.mts').PointerConfig
+    type PhysicsStartDetail = import('./wheel-canvas-js.d.mts').PhysicsStartDetail
+    type PhysicsReleaseDetail = import('./wheel-canvas-js.d.mts').PhysicsReleaseDetail
+    type PhysicsEndDetail = import('./wheel-canvas-js.d.mts').PhysicsEndDetail
+    type PhysicsCancelDetail = import('./wheel-canvas-js.d.mts').PhysicsCancelDetail
+    type PhysicsConfig = import('./wheel-canvas-js.d.mts').PhysicsConfig
+    type FeedbackSectorDetail = import('./wheel-canvas-js.d.mts').FeedbackSectorDetail
+    type FeedbackResultDetail = import('./wheel-canvas-js.d.mts').FeedbackResultDetail
+    type FeedbackSoundConfig = import('./wheel-canvas-js.d.mts').FeedbackSoundConfig
+    type FeedbackCelebrationConfig = import('./wheel-canvas-js.d.mts').FeedbackCelebrationConfig
+    type FeedbackConfig = import('./wheel-canvas-js.d.mts').FeedbackConfig
+    type DefaultConfig = import('./wheel-canvas-js.d.mts').DefaultConfig
+    type DefaultStyle = import('./wheel-canvas-js.d.mts').DefaultStyle
+    type LifecycleHooks = import('./wheel-canvas-js.d.mts').LifecycleHooks
+    type WheelCanvasOptions = import('./wheel-canvas-js.d.mts').WheelCanvasOptions
+    type HostConfig = import('./wheel-canvas-js.d.mts').HostConfig
+    type PrizeLayout = import('./wheel-canvas-js.d.mts').PrizeLayout
+    type WheelCanvas = import('./wheel-canvas-js.d.mts').WheelCanvas
+
+    const version: typeof import('./wheel-canvas-js.d.mts').version
+    const WheelCanvas: typeof import('./wheel-canvas-js.d.mts').WheelCanvas
+    const createWheelCanvas: typeof import('./wheel-canvas-js.d.mts').createWheelCanvas
+}
+
+export = WheelCanvasJS
+export as namespace WheelCanvasJS
